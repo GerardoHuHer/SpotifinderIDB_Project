@@ -1,0 +1,109 @@
+.titulo a{
+    color:#121212;
+    text-decoration: none;
+}
+
+.titulo{
+    background-color: #62CE6A;
+}
+
+h1{
+    border-radius: 5px;
+    background-color: #A7A7A7;
+    padding: 10px;
+    margin: 10px;
+}
+
+.container{
+	display: flex;
+	margin: 10px;
+}
+
+
+.right-div {
+	/*
+	float: right;
+	width: 70%;
+	height: 500px;
+	background-color: #121212;
+    border-radius: 5px;
+	flex: 2;	
+	Prueba
+	display: inline-block;
+	*/
+	float: right;
+    width: 70%;
+    background-color: #121212;
+    border-radius: 5px;
+    flex: 2;
+    display: inline-block;
+    height: auto; /* o elimina esta línea */
+}
+
+body{
+    background-color: black;
+}
+
+.options{
+    float: left;
+	width: 30%;
+	height: 500px;
+	background-color: #121212;
+    border-radius: 5px;
+	flex: 1;
+	margin-right: 10px;
+}
+
+.options ul{
+    list-style-type: none;
+}
+
+.options li{
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.options li a{
+	display: block;
+	color: #A7A7A7;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px
+}
+
+.options a:hover{
+	border-radius: 15px;
+	border-color: #62CE6A;
+	border-width: 3px;
+	border-style: double;
+	padding: 14px 16px;
+}
+
+.texto {
+	color: #A7A7A7;	
+	display: inline-block;
+}
+
+.lista {
+	color: #A7A7A7;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta el texto que no cabe */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es demasiado largo */
+}
+
+.query_title{
+	font-size: large;
+    color: #A7A7A7;
+    margin-bottom: 10px; /* Agrega espacio entre el título y la lista */
+}
+
+.opcion6{
+	display: inline-block;
+	border-radius: 15px;
+	border-color: #62CE6A;
+	border-width: 3px;
+	border-style: double;
+    display: center;
+}
+

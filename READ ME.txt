@@ -1,0 +1,7 @@
+Instalar flask con el comando "pip install flask"
+Instalar SQLAlchemy con el comando "pip install sqlalchemy"
+
+La base de datos tiene que tener la contraseña y el usuario "root" 
+
+IMPORTANTE:
+-Tener la base de datos importada con el nombre de base_datos_spotifinder

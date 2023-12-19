@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spotifinder</title>
+    {%block cssfile%} {%endblock%}
+</head>
+<body>
+	<h1 class = "titulo"><a href="/">Spotifinder</a></h1>
+	<div class = "container">
+		<div class="options">
+			<ul>
+				<li><a href="/">Inicio</a></li>
+				<li class = opcion1 ><a href="/query1">Top 10 artistas más escuchados en 2023</a></li>	
+				<li  class = opcion2 ><a href="/query2">Top 20 canciones más escuchadas</a></li>
+				<li class = opcion3><a href="/query3">Top 10 países con más usuarios</a></li>
+				<li class = opcion4><a href="/query4">Top 20 artistas con más canciones</a></li>
+				<li class = opcion5><a href="/query5">Porcentaje de usuarios hombres y mujeres</a></li>
+				<li class = opcion6><a href="/query6">Porcentaje de usuarios con cuenta gratuita o premium</a></li>
+			</ul>
+		</div>
+		<div class="right-div">
+			{%block query%}								
+			{%endblock%}
+		</div>	
+	</div>
+</body>
+</html>

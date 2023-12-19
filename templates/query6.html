@@ -1,0 +1,19 @@
+{%extends 'base.html'%}
+
+{%block cssfile%} 
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='query6.css') }}">
+{%endblock%}
+
+{%block query%}
+    <p class = "texto">
+        <ul>            
+            <h2 class = query_title><b>Porcentaje de usuarios con cuenta gratuita o premium</b></h2>    
+            <p></p>
+            {% for artista in artistas %}            
+                <li class = lista>{{artista[0]}} usuarios free representan el {{artista[1]}}% de un total de {{artista[4]}} usuarios</li>
+                <li class = lista></li>
+                <li class = lista>{{artista[2]}} usuarios premium representan el {{artista[3]}}% de un total de {{artista[4]}} usuarios</li>                
+            {% endfor %}
+        </ul>
+    </p>
+{%endblock%}

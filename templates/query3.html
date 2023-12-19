@@ -1,0 +1,18 @@
+{%extends 'base.html'%}
+
+{%block cssfile%} 
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='query3.css') }}">
+{%endblock%}
+
+{%block query%}
+    <p class = "texto">
+        <ul>            
+            <h2 class = query_title><b>Top 10 paises con más usuarios</b></h2>    
+            <p></p>
+            {% for artista in artistas %}            
+                <li class = lista>{{artista[1]}} con un total de {{artista[0]}} usuarios.</li>
+                <li class = lista></li>
+            {% endfor %}
+        </ul>
+    </p>
+{%endblock%}
